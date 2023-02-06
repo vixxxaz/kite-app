@@ -1,0 +1,319 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Zen+Dots&display=swap');
+
+#date{
+    color: #fff;
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+}
+nav {
+    margin: 0;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+  }
+
+.nav-container{
+    background-color: #130866;
+}
+
+.logout-button{
+    width: 80px;
+    height: 40px;
+    color: rgb(197, 193, 193);
+    background-color: #4e6096;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.logout-button:hover{
+    background-color: #bd334a;
+    color: #fff;
+}
+
+.info{
+    text-align: center;
+    font-size: larger;
+    color:#f9f9fa;
+
+}
+
+.div-text-shadow{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    background-color: #476e9e;
+    text-shadow: rgb(204, 204, 204) 0px 1px 0px, rgb(201, 201, 201) 0px 2px 0px, rgb(187, 187, 187) 0px 3px 0px, rgb(185, 185, 185) 0px 4px 0px, rgb(170, 170, 170) 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 6px 1px, rgba(0, 0, 0, 0.1) 0px 0px 5px, rgba(0, 0, 0, 0.3) 0px 1px 3px, rgba(0, 0, 0, 0.15) 0px 3px 5px, rgba(0, 0, 0, 0.2) 0px 5px 10px, rgba(0, 0, 0, 0.2) 0px 10px 10px, rgba(0, 0, 0, 0.1) 0px 20px 20px;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: -39px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Nerko One', cursive;
+    color: #fff;
+    font-size: 2rem;
+    
+}
+a:hover{
+    color: red;
+}
+
+h1, h2{
+    font-family: 'Zen Dots', cursive;
+    color: #fff;
+}
+
+p{
+    font-family: 'Nerko One', cursive; 
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.svg-map{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+   
+}
+
+/* carte de l accueil grece*/
+.map__image{
+    border: 12px outset rgba(28,110,164,0.88);
+    height: 500px;
+}
+.svg-content{
+    width: 100%;
+    height: 100%;    
+}
+
+.map__image path{
+    fill: #1094a0;
+    stroke: #fff;
+    stroke-width: 1px;
+    transition: fill 0.2s;
+}
+
+.map__image .is-active path {
+    fill: #130866;   
+}
+
+
+/* liste regions */
+.map__list{
+    text-align: center;
+    text-decoration: none;
+}
+
+.map__list a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.map__list a.is-active {
+    color: #bd334a;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 20px;  
+}
+/*post*/
+.post-title{
+    color: #130866;
+}
+.createPostPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+.cpContainer {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: rgb(33, 8, 78);
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+.submit-button{
+    width: 50%;
+    height: 40px;
+    
+}
+
+.cpContainer {
+    margin-top: 20px;  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+.cpContainer .inputGp {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+.cpContainer label {
+font-size: 25px;
+}
+
+
+.inputGp input,
+.inputGp textarea {
+font-size: 18px;
+border: none;
+border-radius: 2px;
+padding: 5px;
+}
+
+.inputGp input {
+height: 40px;
+}
+.inputGp textarea {
+height: 150px;
+}
+
+input,
+textarea {
+margin-top: 5px;
+}
+.submit-button:disabled{
+    background-color: #338abd;
+}
+/* carte de region chalcidique*/
+
+.mapCha__image{
+    border: 12px outset rgba(28,110,164,0.88);
+    }
+
+.mapCha__image path{
+    fill: #1094a0;
+    stroke: #fff;
+    stroke-width: 1px;
+    transition: fill 0.2s;
+}
+
+.mapCha__image .is-active path {
+    fill: #130866;   
+}
+.is-working path {
+    fill: rgb(213, 13, 13);
+}
+
+/*footer*/
+.foot-container{
+    border-radius: 20px 20px 0 0;
+    background-color: #476e9e;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+
+
+/* navigation */
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+
+.button{
+    box-shadow: 0px 0px 0px 2px #9fb4f2;
+    background:linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    border:1px solid #4e6096;
+    text-shadow:0px 1px 0px #283966;   
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+}
+
+.button:hover{
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+	background-color:#476e9e;
+    background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);	
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+li + a{
+    text-decoration: none;
+}
+/* page angeloxhochi */
+.table-forecast{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    font-weight: bold;
+    font-family: 'Nerko One', cursive;
+    font-size: larger;
+    background-color: #95dee3;
+    color: #283966;
+    border-radius: 20px;
+}
+
+td{
+text-align: center;
+}
+
+tbody, td, th {
+    border-radius: 20px;
+    border: 1px solid rgb(2, 13, 132);
+}
+
+@media screen and (max-width: 768px) {
+    .svg-map{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+    }
+}

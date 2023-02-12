@@ -23,7 +23,7 @@ const NavBar = ({ isAuth, setIsAuth }) => {
         <Link to="/login">Login </Link> 
         ): (
           <>
-          <Link to='/greece'>Spots greece</Link>
+          
           <Link to="/createpost"> create post</Link>
           <button className='logout-button' onClick={signUserOut}>Logout</button>
           </>

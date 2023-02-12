@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { getDocs ,collection, deleteDoc, doc } from 'firebase/firestore'
 import { auth, db } from '../firebase-config'
+import InteractiveMap from '../components/InteractiveMap';
 
   
 const Home = ({isAuth}) => {
@@ -37,8 +38,12 @@ const Home = ({isAuth}) => {
     }, []);
   
     return (
-
+      <>
+      <div className='homePage'>
+      <InteractiveMap />
+      </div>
       <div className="homePage">
+        
         {postLists.length ? (
           postLists.map((post, index) => (
             <div key={index} className="post">
@@ -56,6 +61,7 @@ const Home = ({isAuth}) => {
         ) : (
           <p>Aucun post </p>  )}
           </div>
+          </>
         )};
 
 export default Home;

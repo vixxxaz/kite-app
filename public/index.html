@@ -24,6 +24,10 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-----------lien pour l'affichege de la carte leaflet-------------------------->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+     crossorigin=""/>
     <title>KITE GRECE</title>
     <meta name="google-site-verification" content="sM1irhc-qWPlefouQaiPpM3UH9QaFkyEy712-Ovvk2E" />
   </head>
@@ -36,7 +40,10 @@
 
     gtag('config', 'G-EJCFBJ701Y');
   </script>
-  
+  <!------------script Make sure you put this AFTER Leaflet's CSS --------------------------------->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

@@ -1,6 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Zen+Dots&display=swap');
-
+/* leaflet */
+.Leaflet-container{
+    display: flex;
+    justify-content: center;
+}
+#map{
+    height: 500px;
+}
 #date{
     color: #fff;
 }
@@ -97,18 +104,24 @@ p{
     align-items: center;
 }
 
-.svg-map{
+/* carte de l accueil grece*/
+
+svg{
+    width: 100%;
+    height: 90%;
+}
+
+.svg_map{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 100%;
-   
+    align-items: center;
+    width: 95%; 
 }
-
-/* carte de l accueil grece*/
 .map__image{
-    border: 12px outset rgba(28,110,164,0.88);
-    height: 500px;
+    /* border: 12px outset rgba(28,110,164,0.88); */
+    height: 846px;
+    width: 473px;
 }
 .svg-content{
     width: 100%;
@@ -128,9 +141,15 @@ p{
 
 
 /* liste regions */
-.map__list{
+
+.list-district{
+    font-size: xx-small;
+}
+
+.map__list {
     text-align: center;
     text-decoration: none;
+    display: none;
 }
 
 .map__list a{
@@ -145,7 +164,9 @@ p{
     font-family: 'Franklin Gothic Medium';
     font-size: 20px;  
 }
-/*post*/
+
+/*Createpost page*/
+
 .post-title{
     color: #130866;
 }
@@ -189,7 +210,8 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
+
 .cpContainer label {
 font-size: 25px;
 }
@@ -206,6 +228,7 @@ padding: 5px;
 .inputGp input {
 height: 40px;
 }
+
 .inputGp textarea {
 height: 150px;
 }
@@ -214,14 +237,24 @@ input,
 textarea {
 margin-top: 5px;
 }
+
 .submit-button:disabled{
     background-color: #338abd;
 }
+
+/* post*/
+
+img{
+    display: flex;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
 /* carte de region chalcidique*/
 
 .mapCha__image{
     border: 12px outset rgba(28,110,164,0.88);
-    }
+}
 
 .mapCha__image path{
     fill: #1094a0;
@@ -233,11 +266,13 @@ margin-top: 5px;
 .mapCha__image .is-active path {
     fill: #130866;   
 }
+
 .is-working path {
     fill: rgb(213, 13, 13);
 }
 
 /*footer*/
+
 .foot-container{
     border-radius: 20px 20px 0 0;
     background-color: #476e9e;
@@ -246,15 +281,14 @@ margin-top: 5px;
 }
 
 
-
 /* navigation */
-.nav{
+/* .nav{
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
     list-style-type: none;
-}
+} */
 
 
 
@@ -287,7 +321,9 @@ margin-top: 5px;
 li + a{
     text-decoration: none;
 }
-/* page angeloxhochi */
+
+/* page angelochochi */
+
 .table-forecast{
     display: flex;
     flex-direction: column;
@@ -310,10 +346,26 @@ tbody, td, th {
 }
 
 @media screen and (max-width: 768px) {
+    .map__image{
+        margin-top: 80px;
+    }
     .svg-map{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 100%;
+        align-items: center;
+        width: 95%;
+    }
+    img{
+        width: 50%;
+    }
+
+    svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        max-width: 80%;
+        max-height: 80%;
     }
 }

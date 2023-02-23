@@ -1,9 +1,11 @@
 import React from 'react'
 import {MapContainer, TileLayer, Marker, Popup, Polygon} from 'react-leaflet'
+import Forecast from '../components/Forecast';
 
-import WeatherDisplay from '../components/WeatherDisplay';
 
-const Angelo = () => {
+
+
+const Angelo = ({data}) => {
 
     const position=[40.494988, 22.817900];
     //ajout de la zone de kite
@@ -12,6 +14,7 @@ const Angelo = () => {
         [40.487083, 22.816271],
         [40.490034, 22.791086]
     ];
+
   return (
     <section>
     <div className='Leaflet-container'>
@@ -23,15 +26,14 @@ const Angelo = () => {
                 <Polygon positions={polygonCoords} />
                 <Marker position={[40.494988, 22.817900]}>
                     <Popup>
-                        <p>A lot of turbulence to launch the kite ,put it on the sea side</p>
+                        <p>A lot of turbulence to launch the kite ,put it on the sea side, avoid staying on beach with kite twelve</p>
                     </Popup>
                 </Marker>
                
         </MapContainer> 
     </div>
     <div>
-        <WeatherDisplay />
-
+        <Forecast data={data}/>   
     </div>
     </section>
     

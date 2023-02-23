@@ -12,7 +12,7 @@ const Kallikrateia = () => {
 
     <div className="leflet-kalikra">
         <h1 className="info">Kallikrateia</h1>
-        <p className="info">Click on the mark to access the link to the spot, map, forecast and tips !</p>
+        <p className="info">Click on the mark to access the link to the spot, click on it and you will see a map,the forecast for the week and tips !</p>
         <section>        
           <Leaflet />                           
         </section> 

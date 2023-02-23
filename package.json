@@ -1,5 +1,6 @@
 {
   "name": "kite-app",
+  "proxy": "https://cors-anywhere.herokuapp.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "dotenv": "^16.0.3",
     "dotenv-webpack": "^8.0.1",
     "fs": "^0.0.1-security",
+    "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-leaflet": "^4.2.0",
@@ -17,6 +19,8 @@
     "react-scripts": "5.0.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
+    "suspense": "^0.0.1",
+    "util": "^0.12.5",
     "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },

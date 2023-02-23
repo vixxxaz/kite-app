@@ -281,14 +281,7 @@ img{
 }
 
 
-/* navigation */
-/* .nav{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    list-style-type: none;
-} */
+
 
 
 
@@ -343,6 +336,22 @@ text-align: center;
 tbody, td, th {
     border-radius: 20px;
     border: 1px solid rgb(2, 13, 132);
+}
+
+/*forecast*/
+.forecast-title{
+    color: #95dee3;
+    text-align: center;
+}
+.forecast-info{
+    color: #09113f;
+    text-align: center;
+    font-size: x-large;
+}
+.forecast{
+    background-color: #95dee3;
+    border-radius: 15px;
+    margin: auto;
 }
 
 @media screen and (max-width: 768px) {

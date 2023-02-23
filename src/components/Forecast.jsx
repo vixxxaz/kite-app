@@ -54,8 +54,8 @@ const Forecast = () => {
         {Object.keys(windGustArray.time).map((index) => (
           <tr key={index}>
             <td>{windGustArray.time[index]}</td>
-            {/* <td>{new Date(windGustArray.sunrise[index]).toISOString().split('T')[1].split(':').slice(0,2).join(':')}</td> */}
-            {/* <td>{new Date(windGustArray.sunset[index]).toISOString().split('T')[1].split(':').slice(0,2).join(':')}</td> */}
+            <td>{new Date(windGustArray.sunrise[index]).toISOString().split('T')[1].split(':').slice(0,2).join(':')}</td>
+            <td>{new Date(windGustArray.sunset[index]).toISOString().split('T')[1].split(':').slice(0,2).join(':')}</td>
             <td>{windGustArray.windspeed_10m_max[index]}</td>
             <td>{windGustArray.windgusts_10m_max[index]}</td>
             <td>{degreesToCardinal(windGustArray.winddirection_10m_dominant[index])}</td>

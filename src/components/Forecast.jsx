@@ -1,9 +1,9 @@
 import React from 'react'
 import {UseFetch} from '../components/UseFetch'
 
-const Forecast = () => {
+const Forecast = ({latitude, longitude}) => {
 
-    const {data, error, loading} = UseFetch('https://api.open-meteo.com/v1/forecast?latitude=40.68&longitude=22.20&daily=sunrise,sunset,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant&timezone=auto')
+    const {data , error, loading} =  UseFetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&daily=sunrise,sunset,windspeed_10m_max,windgusts_10m_max,winddirection_10m_dominant&timezone=auto`)
     console.log(data)
   
     // const txtWind0 = windGustArray.windspeed_10m_max[0];
@@ -36,10 +36,10 @@ const Forecast = () => {
     return (
       
     <div>
-        <h3>Live week Forecast</h3>
+        <h3 className='forecast-title'>Week Forecast</h3>
         
       {/* <p>Wind today at 10m altitude: {windGustArray.windspeed_10m_max[0]} knts</p> */}
-      <table>
+      <table className='forecast'>
         <thead>
           <tr>
             <th>Date</th>

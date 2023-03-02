@@ -1,11 +1,8 @@
 import React from 'react'
 import {MapContainer, TileLayer, Marker, Popup, Polygon} from 'react-leaflet'
-import Forecast from '../components/Forecast';
+import Meteo from '../components/Meteo';
 
-
-
-
-const Angelo = ({data}) => {
+const Angelo = () => {
 
     const position=[40.494988, 22.817900];
     //ajout de la zone de kite
@@ -15,8 +12,12 @@ const Angelo = ({data}) => {
         [40.490034, 22.791086]
     ];
 
+    const latitude = 40.68;
+    const longitude = 22.20;
+
   return (
     <section>
+        <h1 className='forecast-title'>Angelo</h1>
     <div className='Leaflet-container'>
         <MapContainer style={{width:'500px', height:'500px'}} center={position} zoom={11} scrollWheelZoom={true}>
             <TileLayer
@@ -28,12 +29,11 @@ const Angelo = ({data}) => {
                     <Popup>
                         <p>A lot of turbulence to launch the kite ,put it on the sea side, avoid staying on beach with kite twelve</p>
                     </Popup>
-                </Marker>
-               
+                </Marker>              
         </MapContainer> 
     </div>
-    <div>
-        <Forecast data={data}/>   
+    <div>   
+        <Meteo latitude={latitude} longitude={longitude} />
     </div>
     </section>
     

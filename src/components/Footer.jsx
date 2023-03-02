@@ -1,4 +1,4 @@
-const Footer = () => {
+const Footer = ({links}) => {
     var myDate = Date()
     return (
 

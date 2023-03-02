@@ -5,8 +5,7 @@ import InteractiveMap from '../components/InteractiveMap';
 
   
 const Home = ({isAuth}) => {
-
-    
+   
     const deletePost = async (id) => {
         const postDoc = doc(db, "POST", id);
         try {
@@ -26,7 +25,7 @@ const Home = ({isAuth}) => {
       try {
         const data = await getDocs(postCollectionRef);
         setPostLists(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-        console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
+        // console.log(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
       } catch (error) {
         console.error(error)
         // Ajoutez une gestion d'erreur pour afficher un message d'erreur ici
@@ -39,6 +38,8 @@ const Home = ({isAuth}) => {
   
     return (
       <>
+      <h1 className='forecast-title'>Click on the district you want to go kite to access to the map and forecast</h1>
+      <p className='forecast-info'>login with google to see the post and to share your session</p>
       <div className='homePage'>
       <InteractiveMap />
       </div>

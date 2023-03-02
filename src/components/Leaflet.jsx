@@ -19,17 +19,17 @@ const Leaflet = () => {
                 </Marker>
                 <Marker position={[40.374742, 22.890661]}>
                     <Popup>
-                        <a href='pages/epanomi.html'>Epanomi</a>
+                        <a href='/epanomi'>Epanomi</a>
                     </Popup>
                 </Marker>
                 <Marker position={[40.374048, 22.957411]}>
                     <Popup>
-                        <a href='pages/mindloop.html'>Mindloop</a>
+                        <a href='/mindloop'>Mindloop</a>
                     </Popup>
                 </Marker>
                 <Marker position={[40.476137, 22.819931]}>
                     <Popup>
-                        <a href='pages/riviera.html'>Riviera</a>
+                        <a href='/riviera'>Riviera</a>
                     </Popup>
                 </Marker>
         </MapContainer> 

@@ -13,7 +13,7 @@ function Meteo({latitude, longitude}) {
       setData(jsonData);
     }
     fetchData();
-  }, []);
+  }, [latitude, longitude]);
 
   //change les direction de degree a direction
   const cardinalDirections = [
@@ -42,9 +42,9 @@ function Meteo({latitude, longitude}) {
       <table
         style={{
           backgroundColor: 'white',
-          border: '2px solid black',
           borderCollapse: 'collapse',
           margin: 'auto',
+          borderRadius: '25px'
           
         }}
       >

@@ -16,6 +16,7 @@ import Epanomi from './pages/Epanomi';
 import Mindloop from './pages/Mindloop';
 import Vorvourou from './pages/Vorvourou';
 import Nea from './pages/Nea';
+import Rachies from './pages/Rachies';
 
 const App = () => {
 
@@ -32,6 +33,7 @@ const App = () => {
             <Route path='/mindloop' element={<Mindloop />} />
             <Route path='/vorvourou' element={<Vorvourou />} />
             <Route path='/Nea' element={<Nea />} />
+            <Route path='/Rachies' element={<Rachies />} />
             <Route path='/kalikrateia' element={<Kallikrateia />} />           
             <Route path='/chalcidique' element={<Chalcidique />} />
             <Route path='/createpost' element={<CreatePost isAuth={isAuth}/>} />
